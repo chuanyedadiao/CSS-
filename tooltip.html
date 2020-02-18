@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+.tooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext5 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext5::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip .tooltiptext6 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* 淡入 - 1秒内从 0% 到 100% 显示: */
+    opacity: 0;
+    transition: opacity 1s;
+}/*淡入效果*/
+
+
+.tooltip:hover .tooltiptext1 {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext2 {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext3 {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext4 {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext5 {
+    visibility: visible;
+}
+.tooltip:hover .tooltiptext6 {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>左侧提示工具</h2>
+<p>鼠标移动到以下元素:</p>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext1">提示文本</span>
+</div>
+<br>
+
+<h2>左侧提示工具</h2>
+<p>鼠标移动到以下元素:</p>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext2">提示文本</span>
+</div>
+<br>
+
+<h2>头部提示工具</h2>
+<p>鼠标移动到以下元素:</p>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext3">提示文本</span>
+</div>
+<br>
+
+<h2>底部提示工具</h2>
+<p>鼠标移动到以下元素:</p>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext4">提示文本</span>
+</div>
+<br>
+
+<h2>顶部提示框/底部箭头</h2>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext5">提示文本</span>
+</div>
+<br>
+
+<h2>提示工具淡入效果</h2>
+<p>鼠标移动到以下元素，提示工具会再一秒内从 0% 到 100% 完全显示。</p>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext6">提示文本</span>
+</div>
+</body>
+</html>

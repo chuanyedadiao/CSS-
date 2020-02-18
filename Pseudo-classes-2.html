@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+p:first-child
+{
+	color:blue;
+} 
+p > i:first-child
+{
+	color:blue;
+} 
+/*
+p:first-child i
+{
+	color:blue;
+}这里是将第一个p中的所有i元素变为蓝色
+*/
+</style>
+</head>
+
+<body>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<p><b>注意:</b>对于 :first-child 工作于 IE8 以及更早版本的浏览器, ！DOCTYPE 必须已经声明.</p>
+<br>
+
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<br>
+<!--p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p-->
+</body>
+</html>
